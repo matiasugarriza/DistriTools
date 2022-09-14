@@ -1,0 +1,309 @@
+/* Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+    font-family: sans-serif;
+    font-size: 100%;
+    list-style-type: none;
+    text-decoration: none;
+}
+/* Header, logo y nav */
+header div{
+    background-color: rgb(255, 123, 0);
+    height: 6vw;
+    width: 100%;
+    position:fixed;
+    top: 0;
+    z-index: 999;
+}
+header div .logo {
+    height: 5vw;
+    position: relative;
+    display:inline-block;
+    top: 0.5vw;
+    left: 1vw;
+}
+#header__menu {
+    position: absolute;
+    display: inline;
+    top: 2vw;
+    right: 2vw;
+}
+#header__menu ul {
+    display: inline;
+    position: relative;
+}
+#header__menu ul li {
+    padding: 1vw;
+    display: inline;
+}
+#header__menu ul li a{
+    color: white;
+    font-size: 1.5vw;
+    
+}
+#header__menu ul li:hover{
+    background-color: black;
+}
+ /* section */
+ 
+#home__section {
+    background-color: black;
+    width: 100vw;
+    margin-top: 6vw;
+    padding-top: 2vw;
+    position: relative;
+    text-align: center;
+}
+section h1{
+    display:none;
+}
+/* Herramientas */
+
+section .home__herramientas{
+    height: 32vw;
+    width: 32vw;
+    margin-right: 3vw;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+/* Griferia */
+section .home__griferia{
+    height: 32vw;
+    width: 30vw;
+    margin-right: 3vw;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+/* Electricidad e Insumos*/ 
+section .home__electricidad, section .home__insumos{
+    height: 15vw;
+    width: 15vw;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+section .home__electricidad{
+    position: absolute;
+    top: 2vw; 
+}
+section .home__insumos{
+    bottom: 0;
+}
+
+/*Interiores, Texto e Imagen*/
+section .home__herramientas img, section .home__griferia img, section .home__electricidad img, section .home__insumos img {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: inline;
+    left: 0;
+    z-index: 0;
+}
+section .home__herramientas p, section .home__griferia p, section .home__electricidad p, section .home__insumos p{
+    background-color: rgba(36, 36, 36, 0.349);
+    color: rgb(0, 0, 0);
+    font-size: 2vw;
+    position: relative;
+    display: block;
+    z-index: 1;
+    bottom: 4vw;
+}
+/* Página Catálogo */
+#catalogo__article {
+    width: 100vw;
+    margin-top: 6vw;
+    padding-top: 2vw;
+    text-align: center;
+}
+h2 {
+    background-color: rgba(105, 105, 105, 0.24);
+    font-size: 3vw;
+    margin: auto;
+    padding: 1.5vw;
+}
+.listaDePrecios {
+    text-align: left;
+    padding: 1vw;
+}
+.listaDePrecios img {
+    height: 5vw;
+    position: relative;
+    display: inline-block;
+    left: 2vw;
+}
+.link-lista p{
+    color: black;
+    font-size: 1.3vw;
+    position: relative;
+    display: inline-block;
+    top: -1.5vw;
+    left: 3vw;
+}
+h3,h4 {
+    font-size: 2vw;
+    margin: auto;
+    padding: 1vw 0 1vw 0;
+}
+.catalogo__herramientas, .catalogo__griferia, .catalogo__electricidad, .catalogo__insumos {
+    background-color: rgba(105, 105, 105, 0.24);
+    margin: 3vh 0 3vh;
+    padding: 0 2vw 2vw 2vw;
+    text-align: center;
+}
+.catalogo div div{
+    display: inline;
+    text-align: center;
+    margin: 1vw;
+}
+.catalogo div div p{
+    display: inline;
+    position: absolute;
+}
+.catalogo div div img {
+    height: 15vw;
+    width: 15vw;
+    display: inline;
+}
+/* Página Tutoriales */
+#tutoriales {
+    width: 100vw;
+    margin-top: 6vw;
+    padding-top: 2vw;
+    text-align: center;
+}
+#tutoriales .videoTutorial {
+    background-color: rgba(105, 105, 105, 0.24);
+    width: 30vw;
+    text-align: left;
+    display: inline-block;
+    margin: 2vw 1.4vw 2vw 1vw;
+}
+#tutoriales .videoTutorial iframe{
+    width: 100%;
+}
+/* Página Nosotros */
+#nosotros__section {
+    width: 100vw;
+    margin-top: 6vw;
+    padding-top: 2vw;
+    text-align: center;
+}
+.marcas {
+    border-right: 2px solid black;
+    width: 20vw;
+    margin-top: 6vw;
+    margin-right: 2vw;
+    padding-bottom: 6vw;
+    display: inline-block;
+}
+.marcas h5 {
+    margin-top: 2vw;
+    margin-bottom: 4vw;
+}
+.marcas img{
+    width: 5vw;
+}
+.textoNosotros {
+    width: 60vw;
+    display:inline-flex; 
+    align-items: center;
+    text-align: left;
+}
+.textoNosotros img {
+    height: 5vw;
+    margin: 2vw;
+}
+.textoNosotros div{
+    width: 50vw;
+    margin-bottom: 6vw;
+}
+.textoNosotros div p{
+    margin-bottom: 3vw;
+}
+/* Página Contacto */
+#contacto__section {
+    width: 100vw;
+    margin-top: 6vw;
+    padding-top: 2vw;
+    text-align: center;
+}
+#contacto__section .contacto {
+    margin-top: 4vw;
+    display: flex;
+    align-content: center;
+}
+#datoContacto {
+    margin-top: 2vw;
+}
+#datoContacto, .formulario {
+    display: inline;
+    text-align: left;
+    font-size: 1.5;
+    margin-left: 10vw;
+}
+#datoContacto li{
+    width: 3vw;
+    display: inline-block;
+    margin-top: 10vw;
+    margin-left: 0.5vw;
+}
+#datoContacto img{
+    width: 3vw;
+    display: inline-block;
+}
+.formulario {
+    width: 30vw;
+}
+.formulario input, .formulario select, .formulario textarea{
+    width: 20vw;
+    display: inline-block;
+}
+.formulario input, .formulario select{
+    height: 3vh;
+    margin-bottom: 2vh;
+}
+footer {
+    background-color: rgb(177, 177, 177);
+    height: 8vw;
+    text-align: center;
+}
+footer img {
+    width: 10vw;
+    display: inline-block;
+}
+footer .logo {
+    height: 1vw;
+    position: relative;
+    display:inline-block;
+    top: 0.5vw;
+    left: 1vw;
+}
+#footer__menu {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    top: -1vw;
+    margin-left: 20vw;
+}
+footer li, footer ul, footer div {
+    display: inline-block;
+}
+footer li a{
+    color: black;
+}
+#footer__redes {
+    width: 15vw;
+    text-align: right;
+    margin-top: 1vw;
+    margin-left: 15vw;
+}
+#footer__redes img {
+    width: 2vw;
+    display: inline-block;
+}
