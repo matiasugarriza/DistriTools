@@ -9,7 +9,70 @@
     text-decoration: none;
 }
 /* Header, logo y nav */
-header div{
+@media screen and (min-width: 320px) and (max-width: 1200px) {
+    header {
+        width: 100%;
+        z-index: 32;
+        display: flex;
+        padding: 16px;
+        font-size: 14px;
+        background-color: rgb(255, 123, 0);
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    header .logo {
+        height: 10vw;
+    }
+    .nav__checkbox {
+        display: none;
+    }
+    .close {
+        display: none;
+    }
+    #header__menu {
+        width: 100%;
+        display: none;
+        margin: 1vw;
+        justify-content: center;
+        opacity: 0;
+        height: 0vh;
+        overflow: hidden;
+        transition: all .5s ease;
+    }
+
+    #header__menu ul {
+        width: 100%;
+        text-align: center;
+        padding: 0%;
+    }
+    #header__menu ul li {
+        margin: 0%;
+        padding: 1vw;
+    }
+    #header__menu ul li a{
+        color: white;
+        font-size: 4vw;
+        text-decoration: none;
+    }
+    #nav__checkbox:checked ~ #header__menu {
+        background-color: rgb(36, 36, 36);
+        display: block;
+        opacity: 100;
+        height: auto;
+        padding-top: 2vh;
+      }
+    #nav__checkbox:checked ~ label .close {
+        display: block;
+      }
+      #nav__checkbox:checked ~ label .menu {
+        display: none;
+      }
+   
+}
+@media screen and (min-width: 1200px) {
+header {
     background-color: rgb(255, 123, 0);
     height: 6vw;
     width: 100%;
@@ -17,7 +80,7 @@ header div{
     top: 0;
     z-index: 999;
 }
-header div .logo {
+header .logo {
     height: 5vw;
     position: relative;
     display:inline-block;
@@ -46,6 +109,16 @@ header div .logo {
 #header__menu ul li:hover{
     background-color: black;
 }
+#nav__checkbox {
+    display: none;
+}
+label .close {
+    display: none;
+}
+label .menu {
+    display: none;
+}
+}
  /* section */
  
 #home__section {
@@ -59,6 +132,7 @@ header div .logo {
 section h1{
     display:none;
 }
+
 /* Herramientas */
 
 section .home__herramientas{
@@ -150,7 +224,7 @@ h3,h4 {
     margin: auto;
     padding: 1vw 0 1vw 0;
 }
-.catalogo__herramientas, .catalogo__griferia, .catalogo__electricidad, .catalogo__insumos {
+#catalogo__herramientas, #catalogo__griferia, #catalogo__electricidad, #catalogo__insumos {
     background-color: rgba(105, 105, 105, 0.24);
     margin: 3vh 0 3vh;
     padding: 0 2vw 2vw 2vw;
