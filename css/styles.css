@@ -81,7 +81,7 @@
         padding: 2vh;
         display:grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-row: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
         justify-items: center;    
         align-items: center; 
     }
@@ -100,6 +100,18 @@
         z-index: 1;
         text-align: center;
     }
+    /* Catálogo */
+    .card {
+        margin: 2vh 0 2vh 0;
+    }
+    /* Imagen Medios de Pago */
+    .mediosDePago {
+        width: 100vw;
+    }
+    .mediosDePago img{
+        width: 100%;
+    }
+    /* Footer */
     footer {
         background-color: rgb(116, 116, 116);
         text-align: center;
@@ -130,19 +142,20 @@
     }
     footer li a{
         text-decoration: none;
-        color: black;
-        font-size: 3vh;
+        color: rgb(255, 255, 255);
+        font-size: 2.5vh;
         padding: 1vw;
+        display: inline;
     }
     #footer__redes {
-        padding: 0 10vw 0 10vw;
+        padding: 0 15vw 0 15vw;
     }
     #footer__redes ul{
         margin: 0;
-        padding: 0;
+        padding: 1vh;
         display: flex;
         align-items: center;
-        justify-content: space-around;
+        justify-content:space-around;
         flex-wrap: wrap;
     }
     #footer__redes img {
@@ -266,6 +279,8 @@ section .home__herramientas p, section .home__griferia p, section .home__electri
     bottom: 4vw;
 }
 /* Página Catálogo */
+
+/*  
 #catalogo__article {
     width: 100vw;
     margin-top: 6vw;
@@ -301,7 +316,7 @@ h3,h4 {
     margin: auto;
     padding: 1vw 0 1vw 0;
 }
-#catalogo__herramientas, #catalogo__griferia, #catalogo__electricidad, #catalogo__insumos {
+.catalogo__herramientas, .catalogo__plomeria, .catalogo__electricidad, .catalogo__insumos {
     background-color: rgba(105, 105, 105, 0.24);
     margin: 3vh 0 3vh;
     padding: 0 2vw 2vw 2vw;

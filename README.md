@@ -3,6 +3,10 @@ Este sitio de se trata de una ecommerce de artículos de ferretería.
 Detalle de versiones:
 
 Versión Actual
+1 . Apliqué Grid System de Bootstrap en la página Catálogo.
+2 . Corregí tamaño de las imágenes.
+
+Versión fa69ef2 "Home Mobile"
 1 . Armé versión Mobile del home usando grid.
 2 . Le di estilo al footer en la versión Mobile usando flex.
 3 . Hice la versión Mobile del Footer.
