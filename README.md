@@ -2,9 +2,10 @@ Este sitio de se trata de una ecommerce de artículos de ferretería.
 
 Detalle de versiones:
 
-Versión "Actual"
+Versión b4461e6 "2 Paginas Media Queries" "Actual"
 1 . Corregí Estilo de Catálogo
 2 . Agregué más categorías al catálogo
+3 . Definí los breakpoints y armé el estilo para cada una.
 
 Versión 8c16320 "Catálogo Bootstrap"
 1 . Apliqué Grid System de Bootstrap en la página Catálogo.

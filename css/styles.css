@@ -333,7 +333,7 @@
     }
     section {
         height: 80vh;
-        padding: 0;
+        padding: 2vw;
         margin: 0;
         display: flex;
         flex-wrap: nowrap;
@@ -345,25 +345,36 @@
     footer{
         display: flex;
         height: 10vh;
+        padding: 0;
         flex-wrap: nowrap;
         align-items: center
     }
     footer li a{
-        font-size: 1.3vw;
+        font-size: 1vw;
     }
     footer .logo {
-        height: 100%;
+       align-items: center;
+    }
+    footer .logo img {
+        top: 0;
+        width: 10vw;
     }
     footer ul {
-        height: 100%;
         flex-wrap: nowrap;
     }
-    #footer__redes ul{
-        height: 8vw;
+    #footer__redes {
+        height: 100%;
+        display: flex;
+        padding: 0;
+    }
+     #footer__redes ul{
         padding: 0;
         flex-wrap: nowrap;
+    }
+    #footer__redes ul a{
+        padding: 0 1vw 0 1vw;
     } 
     #footer__redes img {
-        width: 3vw;
+        width: 2.5vw;
     } 
 }
