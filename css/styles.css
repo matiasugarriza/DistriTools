@@ -3,19 +3,22 @@
     margin: 0;
     padding: 0;
     box-sizing: content-box;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Ubuntu', sans-serif;
     font-size: 100%;
     list-style-type: none;
     text-decoration: none;
 }
-@media screen and (max-width: 1200px) {
-    /* Header, logo y nav */
+
+@media screen {
+/* Header, logo y nav */
     header {
+        background-color: rgb(255, 123, 0);
         width: 100%;
         z-index: 32;
-        display: flex;
         font-size: 14px;
-        background-color: rgb(255, 123, 0);
+        position: sticky;
+        top: 0;
+        display: flex;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
@@ -29,11 +32,13 @@
         display: none;
     }
     .menu {
-        margin: 2vw;
+        margin: 2vw 5vw 0  0;
+        color: beige;
     }
     .close {
         display: none;
-        margin: 2vw;
+        margin: 2vw 5vw 0  0;
+        color: beige;
     }
     #header__menu {
         width: 100%;
@@ -55,35 +60,42 @@
     }
     #header__menu ul li a{
         color: white;
-        font-size: 2.5vh;
+        font-size: 4vw;
         text-decoration: none;
     }
     #nav__checkbox:checked ~ #header__menu {
         background-color: rgb(36, 36, 36);
         display: block;
-        height: 30vh;
+        height: 52vw;
         padding-top: 3vh;
         padding-bottom: 1vh;
         margin-bottom: 10vw;
-      }
+    }
     #nav__checkbox:checked ~ label .close {
         display: block;
-      }
+    }
     #nav__checkbox:checked ~ label .menu {
         display: none;
-      }
-      /* Home Mobile - Grid+FlexBox */
+    }
+/* Home  - Grid+FlexBox */
     h1 {
         display: none;
     }
-    #home__section {
+    h2, h3 {
+        text-align: center;
+        font-family: 'Anton', sans-serif;
+    }
+    section {
         background-color: rgb(0, 0, 0);
-        padding: 2vh;
+        padding: 5vw 2vw 2vw 2vw;
         display:grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
         justify-items: center;    
         align-items: center; 
+    }
+    section a {
+        text-decoration: none;
     }
     #home__section div {
         width: 40vw;
@@ -91,7 +103,7 @@
     #home__section div img{
         width: 100%;
     }
-    section .home__herramientas p, section .home__griferia p, section .home__electricidad p, section .home__insumos p{
+    section .home__herramientas p, section .home__plomeria p, section .home__electricidad p, section .home__insumos p{
         background-color: rgb(116, 116, 116);
         color: #ffffff;
         font-size: 4vw;
@@ -101,12 +113,46 @@
         text-align: center;
     }
     /* Catálogo */
+    article {
+        background-color: rgb(0, 0, 0);
+        padding-top: 5vh;
+    }
+    #catalogo__article h2 {
+        font-size: 8vw;
+        color: antiquewhite;
+        padding-bottom: 2vw;
+    }
+    #catalogo__article h3 {
+        color:rgb(255, 255, 255);
+        font-size: 7vw;
+        padding-top: 5vh;
+    }
+    h5 {
+        font-size: 5.5vw;
+    }
+    p {
+        font-size: 4.5vw;
+    }
+    #catalogo__article div div:not(.mediosDePago) {
+        background-color: rgb(116, 116, 116);
+    }
+    #catalogo__herramientas, #catalogo__plomeria, #catalogo__electricidad, #catalogo__insumos {
+        margin-bottom: 6vh;
+    }
     .card {
-        margin: 2vh 0 2vh 0;
+        margin: 5vh;
+    }
+    .card-text {
+        height: 8vh;
     }
     /* Imagen Medios de Pago */
+    .mediosDePago h3{
+
+        padding-bottom: 5vh;
+    }
     .mediosDePago {
         width: 100vw;
+        padding-bottom: 5vh;
     }
     .mediosDePago img{
         width: 100%;
@@ -143,7 +189,7 @@
     footer li a{
         text-decoration: none;
         color: rgb(255, 255, 255);
-        font-size: 2.5vh;
+        font-size: 3.5vw;
         padding: 1vw;
         display: inline;
     }
@@ -159,319 +205,165 @@
         flex-wrap: wrap;
     }
     #footer__redes img {
-        width: 10vw;
+        width: 8vw;
     }
 }
-
-@media screen and (min-width: 1200px) {
-header {
-    background-color: rgb(255, 123, 0);
-    height: 6vw;
-    width: 100%;
-    position:fixed;
-    top: 0;
-    z-index: 999;
+@media screen and (min-width: 425px) {
+    #nav__checkbox:checked ~ #header__menu {
+        height: 45vw;
+    }
+    #header__menu ul li a{
+        color: white;
+        font-size: 4vw;
+        text-decoration: none;
+    }
+    #catalogo__article h2 {
+        font-size: 6vw;
+        color: antiquewhite;
+        padding-bottom: 2vw;
+    }
+    #catalogo__article h3 {
+        color:rgb(255, 255, 255);
+        font-size: 5vw;
+        padding-top: 5vh;
+    }
+    h5 {
+        font-size: 3.5vw;
+    }
+    p {
+        font-size: 2vw;
+    }
+    footer li a{
+        font-size: 3.25vw;
+    }
 }
-header .logo {
-    height: 5vw;
-    position: relative;
-    display:inline-block;
-    top: 0.5vw;
-    left: 1vw;
+@media screen and (min-width: 769px) {
+    header {
+        height: 9vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    header img.logo {
+        height: 6.5vw;
+        margin: 1.25vw;
+        padding: 0;
+    }
+    header a{
+        display: inline;
+    }
+    #header__menu {
+        width: auto;
+        height: auto;
+        display: inline;
+        padding-right: 2vw;
+    }
+    #header__menu ul{
+        display: inline;
+    }
+    #header__menu ul li{
+        display: inline;
+    }
+    #header__menu ul li a{
+        font-size: 2vw;
+    }
+    .menu {
+        display: none;
+    }
+    #catalogo__article h2 {
+        font-size: 5vw;
+        color: antiquewhite;
+        padding-bottom: 2vw;
+    }
+    #catalogo__article h3 {
+        color:rgb(255, 255, 255);
+        font-size: 4vw;
+        padding-top: 5vh;
+    }
+    h5 {
+        font-size: 3vw;
+    }
+    p {
+        font-size: 1.75vw;
+    }
+    footer {
+        display: flex;
+        align-content: flex-start;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    footer li a{
+        font-size: 2vw;
+    }
+    footer .logo {
+        width: 20vw;
+    }
+    footer ul {
+        display: flex;
+        align-content: flex-start;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    #footer__redes {
+        padding: 0;
+        flex-grow: 1;
+    }
+    #footer__redes ul a {
+        display: block; 
+    }
+    #footer__redes img {
+        width: 3vw;
+    } 
 }
-#header__menu {
-    position: absolute;
-    display: inline;
-    top: 2vw;
-    right: 2vw;
-}
-#header__menu ul {
-    display: inline;
-    position: relative;
-}
-#header__menu ul li {
-    padding: 1vw;
-    display: inline;
-}
-#header__menu ul li a{
-    text-decoration: none;
-    color: white;
-    font-size: 1.5vw;
-}
-#header__menu ul li:hover{
-    background-color: black;
-}
-#nav__checkbox {
-    display: none;
-}
-label .close {
-    display: none;
-}
-label .menu {
-    display: none;
-}
- /* section */
-#home__section {
-    background-color: black;
-    width: 100vw;
-    margin-top: 6vw;
-    padding-top: 2vw;
-    position: relative;
-    text-align: center;
-}
-section h1{
-    display:none;
-}
-
-/* Herramientas */
-
-section .home__herramientas{
-    height: 32vw;
-    width: 32vw;
-    margin-right: 3vw;
-    position: relative;
-    display: inline-block;
-    text-align: center;
-}
-
-/* Griferia */
-section .home__griferia{
-    height: 32vw;
-    width: 30vw;
-    margin-right: 3vw;
-    position: relative;
-    display: inline-block;
-    text-align: center;
-}
-
-/* Electricidad e Insumos*/ 
-section .home__electricidad, section .home__insumos{
-    height: 15vw;
-    width: 15vw;
-    position: relative;
-    display: inline-block;
-    text-align: center;
-}
-section .home__electricidad{
-    position: absolute;
-    top: 2vw; 
-}
-section .home__insumos{
-    bottom: 0;
-}
-
-/*Interiores, Texto e Imagen*/
-section .home__herramientas img, section .home__griferia img, section .home__electricidad img, section .home__insumos img {
-    width: 100%;
-    height: 100%;
-    position: relative;
-    display: inline;
-    left: 0;
-    z-index: 0;
-}
-section .home__herramientas p, section .home__griferia p, section .home__electricidad p, section .home__insumos p{
-    background-color: rgba(36, 36, 36, 0.349);
-    color: rgb(0, 0, 0);
-    font-size: 2vw;
-    position: relative;
-    display: block;
-    z-index: 1;
-    bottom: 4vw;
-}
-/* Página Catálogo */
-
-/*  
-#catalogo__article {
-    width: 100vw;
-    margin-top: 6vw;
-    padding-top: 2vw;
-    text-align: center;
-}
-h2 {
-    background-color: rgba(105, 105, 105, 0.24);
-    font-size: 3vw;
-    margin: auto;
-    padding: 1.5vw;
-}
-.listaDePrecios {
-    text-align: left;
-    padding: 1vw;
-}
-.listaDePrecios img {
-    height: 5vw;
-    position: relative;
-    display: inline-block;
-    left: 2vw;
-}
-.link-lista p{
-    color: black;
-    font-size: 1.3vw;
-    position: relative;
-    display: inline-block;
-    top: -1.5vw;
-    left: 3vw;
-}
-h3,h4 {
-    font-size: 2vw;
-    margin: auto;
-    padding: 1vw 0 1vw 0;
-}
-.catalogo__herramientas, .catalogo__plomeria, .catalogo__electricidad, .catalogo__insumos {
-    background-color: rgba(105, 105, 105, 0.24);
-    margin: 3vh 0 3vh;
-    padding: 0 2vw 2vw 2vw;
-    text-align: center;
-}
-.catalogo div div{
-    display: inline;
-    text-align: center;
-    margin: 1vw;
-}
-.catalogo div div p{
-    display: inline;
-    position: absolute;
-}
-.catalogo div div img {
-    height: 15vw;
-    width: 15vw;
-    display: inline;
-}
-/* Página Tutoriales */
-#tutoriales {
-    width: 100vw;
-    margin-top: 6vw;
-    padding-top: 2vw;
-    text-align: center;
-}
-#tutoriales .videoTutorial {
-    background-color: rgba(105, 105, 105, 0.24);
-    width: 30vw;
-    text-align: left;
-    display: inline-block;
-    margin: 2vw 1.4vw 2vw 1vw;
-}
-#tutoriales .videoTutorial iframe{
-    width: 100%;
-}
-/* Página Nosotros */
-#nosotros__section {
-    width: 100vw;
-    margin-top: 6vw;
-    padding-top: 2vw;
-    text-align: center;
-}
-.marcas {
-    border-right: 2px solid black;
-    width: 20vw;
-    margin-top: 6vw;
-    margin-right: 2vw;
-    padding-bottom: 6vw;
-    display: inline-block;
-}
-.marcas h5 {
-    margin-top: 2vw;
-    margin-bottom: 4vw;
-}
-.marcas img{
-    width: 5vw;
-}
-.textoNosotros {
-    width: 60vw;
-    display:inline-flex; 
-    align-items: center;
-    text-align: left;
-}
-.textoNosotros img {
-    height: 5vw;
-    margin: 2vw;
-}
-.textoNosotros div{
-    width: 50vw;
-    margin-bottom: 6vw;
-}
-.textoNosotros div p{
-    margin-bottom: 3vw;
-}
-/* Página Contacto */
-#contacto__section {
-    width: 100vw;
-    margin-top: 6vw;
-    padding-top: 2vw;
-    text-align: center;
-}
-#contacto__section .contacto {
-    margin-top: 4vw;
-    display: flex;
-    align-content: center;
-}
-#datoContacto {
-    margin-top: 2vw;
-}
-#datoContacto, .formulario {
-    display: inline;
-    text-align: left;
-    font-size: 1.5;
-    margin-left: 10vw;
-}
-#datoContacto li{
-    width: 3vw;
-    display: inline-block;
-    margin-top: 10vw;
-    margin-left: 0.5vw;
-}
-#datoContacto img{
-    width: 3vw;
-    display: inline-block;
-}
-.formulario {
-    width: 30vw;
-}
-.formulario input, .formulario select, .formulario textarea{
-    width: 20vw;
-    display: inline-block;
-}
-.formulario input, .formulario select{
-    height: 3vh;
-    margin-bottom: 2vh;
-}
-footer {
-    background-color: rgb(177, 177, 177);
-    height: 8vw;
-    text-align: center;
-}
-footer img {
-    width: 10vw;
-    display: inline-block;
-}
-footer .logo {
-    height: 1vw;
-    position: relative;
-    display:inline-block;
-    top: 0.5vw;
-    left: 1vw;
-}
-#footer__menu {
-    position: relative;
-    display: inline-block;
-    text-align: center;
-    top: -1vw;
-    margin-left: 20vw;
-}
-footer li, footer ul, footer div {
-    display: inline-block;
-}
-footer li a{
-    text-decoration: none;
-    color: black;
-}
-#footer__redes {
-    width: 15vw;
-    text-align: right;
-    margin-top: 1vw;
-    margin-left: 15vw;
-}
-#footer__redes img {
-    width: 2vw;
-    display: inline-block;
-}
+@media screen and (min-width: 1024px) {
+    header {
+        height: 10vh;
+    }
+    header a {
+        height: 100%;
+    }
+    header img.logo {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    section {
+        height: 80vh;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 2vw       
+    }
+    #home__section p {
+        font-size: 2.5vw;
+    }
+    footer{
+        display: flex;
+        height: 10vh;
+        flex-wrap: nowrap;
+        align-items: center
+    }
+    footer li a{
+        font-size: 1.3vw;
+    }
+    footer .logo {
+        height: 100%;
+    }
+    footer ul {
+        height: 100%;
+        flex-wrap: nowrap;
+    }
+    #footer__redes ul{
+        height: 8vw;
+        padding: 0;
+        flex-wrap: nowrap;
+    } 
+    #footer__redes img {
+        width: 3vw;
+    } 
 }

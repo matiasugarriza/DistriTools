@@ -8,16 +8,20 @@
     <link rel="stylesheet" href="../css/styles.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Ubuntu&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <img src="../img/logo-distritools.png" alt="Logo DistriTools" class="logo">
+        <a href="../index.html"><img src="../img/logo-distritools.png" alt="Logo DistriTools" class="logo"> </a>
         <input type="checkbox" name="nav__checkbox" id="nav__checkbox" class="nav__checkbox">
         <label for="nav__checkbox" class="nav__toggle">
-        <svg class="menu" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
-            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+        <svg class="menu" src="http://www.w3.org/2000/svg" width="8vw" height="8vw" fill="currentColor" viewBox="0 0 16 16">
+            <path fill-rule="currentColor" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
           </svg>
-          <svg class="close" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+          <svg class="close" xmlns="http://www.w3.org/2000/svg" width="8vw" height="8vw" fill="currentColor" viewBox="0 0 16 16">
             <path d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
             <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
           </svg>
@@ -31,147 +35,235 @@
                 <li><a href="contacto.html">Contacto</a></li>
             </ul>
         </nav>
-</header>
+    </header>
     <article id="catalogo__article">
-    <div>
-        <h2>Catálogo</h2>
-    </div>
-    <div class="catalogo">
-        <h3>Herramientas</h3>
-        <div class="catalogo__herramientas">
-            <div class="p-5 row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-xl-5">
-                <div class="col">
-                    <div class="card">
-                        <img src="../img/productos/Herramientas/Amoladora.png" class="card-img-top" alt="Amoladora">
-                        <div class="card-body">
-                          <h5 class="card-title">$11.200</h5>
-                          <p class="card-text">Amoladora Angular Black & Decker 115Mm 820W</p>
-                          <a href="#" class="btn btn-primary">Agregar al carrito</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card">
-                        <img src="../img/productos/Herramientas/Destornillador.png" class="card-img-top" alt="Destornillador">
-                        <div class="card-body">
-                          <h5 class="card-title">$700</h5>
-                          <p class="card-text">Destornillador Plano 8X150</p>
-                          <a href="#" class="btn btn-primary">Agregar al carrito</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card">
-                        <img src="../img/productos/Herramientas/LlaveAjustable.png" class="card-img-top" alt="Llave Ajustable">
-                        <div class="card-body">
-                          <h5 class="card-title">$3.300</h5>
-                          <p class="card-text">Llave 250 Mm. Ajustable Fosfatada</p>
-                          <a href="#" class="btn btn-primary">Agregar al carrito</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card">
-                        <img src="../img/productos/Herramientas/Martillo.png" class="card-img-top" alt="Martillo">
-                        <div class="card-body">
-                          <h5 class="card-title">$2.100</h5>
-                          <p class="card-text">Martillo Galponero 27 Mm. Cabo De Fibra De Vidrio</p>
-                          <a href="#" class="btn btn-primary">Agregar al carrito</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card">
-                        <img src="../img/productos/Herramientas/Taladro.png" class="card-img-top" alt="Taladro">
-                        <div class="card-body">
-                          <h5 class="card-title">$19.500</h5>
-                          <p class="card-text">Taladro Inalámbrico Tccd 18V + Batería + Cargador</p>
-                          <a href="#" class="btn btn-primary">Agregar al carrito</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div>
+            <h2>Catálogo</h2>
         </div>
-        <!-- 
-        <div id="catalogo__plomeria">
-            <h3>Plomería</h3>
-            <div>
-                <p>Producto 1</p>                
-                <img src="../img/productos/Griferia/Canilla 2.png" alt="Amoladora">
+        <div class="catalogo">
+            <div id="catalogo__herramientas">
+                <h3>Herramientas</h3>
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-xl-5">
+                    <div class="col">
+                        <div class="card bg-light">
+                            <img src="../img/productos/Herramientas/Amoladora.png" class="card-img-top" alt="Amoladora">
+                            <div class="card-body bg-light">
+                            <h5 class="card-title">$11.200</h5>
+                            <p class="card-text">Amoladora Angular Black & Decker 115Mm 820W</p>
+                            <a href="#" class="btn btn-primary">Agregar al carrito</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card bg-light">
+                            <img src="../img/productos/Herramientas/Destornillador.png" class="card-img-top" alt="Destornillador">
+                            <div class="card-body bg-light">
+                            <h5 class="card-title">$700</h5>
+                            <p class="card-text">Destornillador Plano 8X150</p>
+                            <a href="#" class="btn btn-primary">Agregar al carrito</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card bg-light">
+                            <img src="../img/productos/Herramientas/LlaveAjustable.png" class="card-img-top" alt="Llave Ajustable">
+                            <div class="card-body bg-light">
+                            <h5 class="card-title">$3.300</h5>
+                            <p class="card-text">Llave 250 Mm. Ajustable Fosfatada</p>
+                            <a href="#" class="btn btn-primary">Agregar al carrito</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card bg-light">
+                            <img src="../img/productos/Herramientas/Martillo.png" class="card-img-top" alt="Martillo">
+                            <div class="card-body bg-light">
+                            <h5 class="card-title">$2.100</h5>
+                            <p class="card-text">Martillo Galponero 27 Mm. Cabo De Fibra De Vidrio</p>
+                            <a href="#" class="btn btn-primary">Agregar al carrito</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card bg-light">
+                            <img src="../img/productos/Herramientas/Taladro.png" class="card-img-top" alt="Taladro">
+                            <div class="card-body bg-light">
+                            <h5 class="card-title">$19.500</h5>
+                            <p class="card-text">Taladro Inalámbrico Tccd 18V + Batería + Cargador</p>
+                            <a href="#" class="btn btn-primary">Agregar al carrito</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div>
-                <p>Producto 2</p>                
-                <img src="../img/productos/Griferia/Canilla.png" alt="Una canilla">
+            <div id="catalogo__plomeria">
+                <h3>Plomería</h3>
+                <div class=" row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-xl-5">
+                    <div class="col">
+                        <div class="card bg-light">
+                            <img src="../img/productos/Plomeria/Canilla 2.png" class="card-img-top" alt="Canilla Metálica">
+                            <div class="card-body bg-light">
+                            <h5 class="card-title">$1.800</h5>
+                            <p class="card-text">Canilla Esférica Metálica Mariposa Valforte 1/2</p>
+                            <a href="#" class="btn btn-primary">Agregar al carrito</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card bg-light">
+                            <img src="../img/productos/Plomeria/Canilla.png" class="card-img-top" alt="Destornillador">
+                            <div class="card-body bg-light">
+                            <h5 class="card-title">$3.900</h5>
+                            <p class="card-text">Grifería ABS Mesada Luxe Latyn Plast</p>
+                            <a href="#" class="btn btn-primary">Agregar al carrito</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card bg-light">
+                            <img src="../img/productos/Plomeria/Caños.png" class="card-img-top" alt="Llave Ajustable">
+                            <div class="card-body bg-light">
+                            <h5 class="card-title">$1.500</h5>
+                            <p class="card-text">Caño Polipropileno Bicapa 3/4Pulgadasx4M</p>
+                            <a href="#" class="btn btn-primary">Agregar al carrito</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card bg-light">
+                            <img src="../img/productos/Plomeria/Codo.png" class="card-img-top" alt="Martillo">
+                            <div class="card-body bg-light">
+                            <h5 class="card-title">$650</h5>
+                            <p class="card-text">Codo Ferva A 90° Con Rosca H. 20x1/2"</p>
+                            <a href="#" class="btn btn-primary">Agregar al carrito</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card bg-light">
+                            <img src="../img/productos/Plomeria/Valvula.png" class="card-img-top" alt="Taladro">
+                            <div class="card-body bg-light">
+                            <h5 class="card-title">$2.100</h5>
+                            <p class="card-text">Llave De Paso Termofusión Tubofusión Plástico 20 Mm</p>
+                            <a href="#" class="btn btn-primary">Agregar al carrito</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div>
-                <p>Producto 3</p>                
-                <img src="../img/productos/Griferia/Caños.png" alt="Caños de PVC">
+            <div id="catalogo__electricidad">
+                <h3>Plomería</h3>
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-xl-5">
+                    <div class="col">
+                        <div class="card bg-light">
+                            <img src="../img/productos/Electricidad/Cable celeste.png" class="card-img-top" alt="Canilla Metálica">
+                            <div class="card-body bg-light">
+                            <h5 class="card-title">$1.800</h5>
+                            <p class="card-text">Canilla Esférica Metálica Mariposa Valforte 1/2</p>
+                            <a href="#" class="btn btn-primary">Agregar al carrito</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card bg-light">
+                            <img src="../img/productos/Electricidad/Cable marron.png" class="card-img-top" alt="Destornillador">
+                            <div class="card-body bg-light">
+                            <h5 class="card-title">$3.900</h5>
+                            <p class="card-text">Grifería ABS Mesada Luxe Latyn Plast</p>
+                            <a href="#" class="btn btn-primary">Agregar al carrito</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card bg-light">
+                            <img src="../img/productos/Electricidad/disyuntor.png" class="card-img-top" alt="Llave Ajustable">
+                            <div class="card-body bg-light">
+                            <h5 class="card-title">$1.500</h5>
+                            <p class="card-text">Caño Polipropileno Bicapa 3/4Pulgadasx4M</p>
+                            <a href="#" class="btn btn-primary">Agregar al carrito</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card bg-light">
+                            <img src="../img/productos/Electricidad/Enchufe.png" class="card-img-top" alt="Martillo">
+                            <div class="card-body bg-light">
+                            <h5 class="card-title">$2.100</h5>
+                            <p class="card-text">Martillo Galponero 27 Mm. Cabo De Fibra De Vidrio</p>
+                            <a href="#" class="btn btn-primary">Agregar al carrito</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card bg-light">
+                            <img src="../img/productos/Electricidad/termica.png" class="card-img-top" alt="Térmica">
+                            <div class="card-body bg-light">
+                            <h5 class="card-title">$2.300</h5>
+                            <p class="card-text">Interruptor Termomagnetico 2X16A 4.5Ka Schneider</p>
+                            <a href="#" class="btn btn-primary">Agregar al carrito</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div>
-                <p>Producto 4</p>                
-                <img src="../img/productos/Griferia/Codo.png" alt="Codo de PVC">
+            <!-- 
+            
+            <div id="catalogo__electricidad">
+                <h3>Electricidad</h3>
+                <div>
+                    <p>Producto 1</p>
+                    <img src="../img/productos/Electricidad/Cable celeste.png" alt="Amoladora">
+                </div>
+                <div>
+                    <p>Producto 2</p>
+                    <img src="../img/productos/Electricidad/Cable marron.png" alt="">
+                </div>
+                <div>
+                    <p>Producto 3</p>
+                    <img src="../img/productos/Electricidad/Disyuntor.png" alt="">
+                </div>
+                <div>
+                    <p>Producto 4</p>
+                    <img src="../img/productos/Electricidad/Enchufe.png" alt="">
+                </div>
+                <div>
+                    <p>Producto 5</p>
+                    <img src="../img/productos/Electricidad/Termica.png" alt="">
+                </div>
             </div>
-            <div>
-                <p>Producto 5</p>                
-                <img src="../img/productos/Griferia/Valvula.png" alt="">
+            <div id="catalogo__insumos">
+                <h3>Insumos</h3>
+                <div>
+                    <p>Producto 1</p>
+                    <img src="../img/productos/Insumos/Ag.png" alt="Amoladora">
+
+                </div>
+                <div>
+                    <p>Producto 2</p>                
+                    <img src="../img/productos/Insumos/arandela.png" alt="">
+
+                </div>
+                <div>
+                    <p>Producto 3</p>                
+                    <img src="../img/productos/Insumos/Clavos.png" alt="">
+
+                </div>
+                <div>
+                    <p>Producto 4</p>                
+                    <img src="../img/productos/Insumos/Grampa.png" alt="">
+
+                </div>
+                <div>
+                    <p>Producto 5</p>                
+                    <img src="../img/productos/Insumos/Tornillos.png" alt="">
+
+                </div>
             </div>
+        </div> -->
+        <div class="mediosDePago">
+            <h3>Medios de Pago</h3>
+            <img src="../img/Medios-de-pago.png" alt="Medios de Pago">
         </div>
-        <div id="catalogo__electricidad">
-            <h3>Electricidad</h3>
-            <div>
-                <p>Producto 1</p>
-                <img src="../img/productos/Electricidad/Cable celeste.png" alt="Amoladora">
-            </div>
-            <div>
-                <p>Producto 2</p>
-                <img src="../img/productos/Electricidad/Cable marron.png" alt="">
-            </div>
-            <div>
-                <p>Producto 3</p>
-                <img src="../img/productos/Electricidad/Disyuntor.png" alt="">
-            </div>
-            <div>
-                <p>Producto 4</p>
-                <img src="../img/productos/Electricidad/Enchufe.png" alt="">
-            </div>
-            <div>
-                <p>Producto 5</p>
-                <img src="../img/productos/Electricidad/Termica.png" alt="">
-            </div>
-        </div>
-        <div id="catalogo__insumos">
-            <h3>Insumos</h3>
-            <div>
-                <p>Producto 1</p>
-                <img src="../img/productos/Insumos/Ag.png" alt="Amoladora">
-
-            </div>
-            <div>
-                <p>Producto 2</p>                
-                <img src="../img/productos/Insumos/arandela.png" alt="">
-
-            </div>
-            <div>
-                <p>Producto 3</p>                
-                <img src="../img/productos/Insumos/Clavos.png" alt="">
-
-            </div>
-            <div>
-                <p>Producto 4</p>                
-                <img src="../img/productos/Insumos/Grampa.png" alt="">
-
-            </div>
-            <div>
-                <p>Producto 5</p>                
-                <img src="../img/productos/Insumos/Tornillos.png" alt="">
-
-            </div>
-        </div>
-    </div> -->
-    <div class="mediosDePago">
-        <h4>Medios de Pago</h4>
-        <img src="../img/Medios-de-pago.png" alt="Medios de Pago">
-    </div>
     </article>
     <footer>
         <div class="logo">

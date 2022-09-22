@@ -2,7 +2,11 @@ Este sitio de se trata de una ecommerce de artículos de ferretería.
 
 Detalle de versiones:
 
-Versión Actual
+Versión "Actual"
+1 . Corregí Estilo de Catálogo
+2 . Agregué más categorías al catálogo
+
+Versión 8c16320 "Catálogo Bootstrap"
 1 . Apliqué Grid System de Bootstrap en la página Catálogo.
 2 . Corregí tamaño de las imágenes.
 
