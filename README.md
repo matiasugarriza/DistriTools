@@ -2,7 +2,12 @@ Este sitio de se trata de una ecommerce de artículos de ferretería.
 
 Detalle de versiones:
 
-Versión b4461e6 "2 Paginas Media Queries" "Actual"
+"Actual"
+
+Versión 07bafe8 "Corrección footer"
+1 . Arreglé los problemas del footer.
+
+Versión b4461e6 "2 Paginas Media Queries" 
 1 . Corregí Estilo de Catálogo
 2 . Agregué más categorías al catálogo
 3 . Definí los breakpoints y armé el estilo para cada una.

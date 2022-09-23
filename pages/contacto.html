@@ -4,20 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Catálogo - DistiTools</title>
+    <title>Contacto - DistiTools</title>
     <link rel="stylesheet" href="../css/styles.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <img src="../img/logo-distritools.png" alt="Logo DistriTools" class="logo">
+        <a href="../index.html"><img src="../img/logo-distritools.png" alt="Logo DistriTools" class="logo"> </a>
         <input type="checkbox" name="nav__checkbox" id="nav__checkbox" class="nav__checkbox">
         <label for="nav__checkbox" class="nav__toggle">
-        <svg class="menu" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
-            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+        <svg class="menu" src="http://www.w3.org/2000/svg" width="8vw" height="8vw" fill="currentColor" viewBox="0 0 16 16">
+            <path fill-rule="currentColor" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
           </svg>
-          <svg class="close" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+          <svg class="close" xmlns="http://www.w3.org/2000/svg" width="8vw" height="8vw" fill="currentColor" viewBox="0 0 16 16">
             <path d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
             <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
           </svg>
@@ -31,69 +34,35 @@
                 <li><a href="contacto.html">Contacto</a></li>
             </ul>
         </nav>
-</header>
-    <section id="contacto__section">
-        <div>
-            <h2>Contacto</h2>
-        </div>
-        <div class="contacto">     
-            <div id="datoContacto">
-                <p>Celular/Whatsapp: <a href="tel:+11523290382">(011) 2329-0382</a></p>
-                <p>Mail: <a href="mailto:info@distritools.com">info@distritools.com</a></p>
-                <div>
-                    <ul>
-                        <li><a href="#"><img src="../img/fa-icon.png" alt="Logo Facebook"></a></li>
-                        <li><a href="#"><img src="../img/ig-icon.png" alt="Logo Instagram"></a></li>
-                        <li><a href="#"><img src="../img/in-icon.png" alt="Logo LinkedIn"></a></li>
-                        <li><a href="#"><img src="../img/yt-icon.png" alt="Logo YouTube"></a></li>
-                    </ul>
-               </div>
-            </div>
-            <div class="formulario">
-                <input type="text" placeholder="Razón Social/Nombre y Apellido">
-                <select name="Categoría IVA">
-                    <option value="categoria">Categoría IVA</option>
-                    <option value="responsable inscripto">Responsable Inscripto</option>
-                    <option value="monotributista">Monotributista</option>
-                    <option value="consumidor final">Consumidor Final</option>
-                </select>
-                <input type="text" placeholder="Cuit (Empresa) / DNI (Persona)">
-                <input type="text" placeholder="Domicilio">
-                <input type="number" placeholder="Código Postal">
-                <input type="tel" placeholder="Teléfono/Celular">
-                <input type="email" placeholder="Email">
-            </div>
-            <div>
-                <textarea name="Dejanos tu mensaje." id="" cols="35" rows="13"></textarea>
-                <button>Enviar</button>
-            </div>
-        </div>
-        <footer>
-            <div class="logo">
-             <img src="../img/logo-distritools.png" alt="Logo DistriTools">
-            </div>
-             <div>
-                 <nav id="footer__menu">
-                     <ul>
-                        <li><a href="../index.html">Home</a></li>
-                        <li><a href="catalogo.html">Catálogo</a></li>
-                        <li><a href="tutoriales.html">Tutoriales</a></li>
-                        <li><a href="nosotros.html">Nosotros</a></li>
-                        <li><a href="contacto.html">Contacto</a></li>
-                     </ul>
-                 </nav>
-            </div>
-            <div id="footer__redes">
-                 <ul>
-                     <li><a href="#"><img src="../img/fa-icon.png" alt="Logo Facebook"></a></li>
-                     <li><a href="#"><img src="../img/ig-icon.png" alt="Logo Instagram"></a></li>
-                     <li><a href="#"><img src="../img/in-icon.png" alt="Logo LinkedIn"></a></li>
-                     <li><a href="#"><img src="../img/yt-icon.png" alt="Logo YouTube"></a></li>
-                     <li><a href="tel:+0541123290382">Tel: (054)-1123290382</a></li>
-                     <li><a href="mailto:info@distritools.com.ar">Mail: info@distritools.com.ar</a></li>
-                 </ul>
-            </div>
-         </footer>
+    </header>
+    <section>
+        <img src="../img/pag_en_construccion.jpg" alt="Página en Construcción">
     </section>
+    <footer>
+        <div class="logo">
+         <img src="../img/logo-distritools.png" alt="Logo DistriTools">
+        </div>
+         <div>
+            <nav id="footer__menu">
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="catalogo.html">Catálogo</a></li>
+                    <li><a href="tutoriales.html">Tutoriales</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div id="footer__redes">
+             <ul>
+                 <li><a href="#"><img src="../img/fa-icon.png" alt="Logo Facebook"></a></li>
+                 <li><a href="#"><img src="../img/ig-icon.png" alt="Logo Instagram"></a></li>
+                 <li><a href="#"><img src="../img/in-icon.png" alt="Logo LinkedIn"></a></li>
+                 <li><a href="#"><img src="../img/yt-icon.png" alt="Logo YouTube"></a></li>
+                 <li><a href="tel:+0541123290382">Tel: (054)-1123290382</a></li>
+                 <li><a href="mailto:info@distritools.com.ar">Mail: info@distritools.com.ar</a></li>
+             </ul>
+        </div>
+     </footer>
 </body>
 </html>
