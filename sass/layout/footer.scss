@@ -1,0 +1,131 @@
+footer {
+    background-color: $secundario;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    .logo {
+        width: 30vw;
+    }
+    img {
+        width: 100%;
+    }
+    #footer__menu {
+        display: flex;
+        flex-direction: column;
+        ul a {
+            background-image: linear-gradient(currentColor, currentColor);
+            background-position: 0% 100%;
+            background-repeat: no-repeat;
+            background-size: 0% 2px;
+            transition: background-size .3s;
+            &:hover {
+                color: $principal;
+                background-size: 100% 2px;
+            }
+        }
+    }
+    & nav ul{
+        margin: 0;
+        padding: 0;
+    }
+    & li {
+        margin: 2vh 0 2vh 0;
+        a{
+            text-decoration: none;
+            color: $color-claro;
+            font-size: 3.5vw;
+            padding: 1vw;
+            display: inline;
+        }
+    }
+    #footer__redes {
+        padding: 0 15vw 0 15vw;
+        ul{
+            margin: 0;
+            padding: 1vh;
+            display: flex;
+            align-items: center;
+            justify-content:space-around;
+            flex-wrap: wrap;
+        }
+        img {
+            width: 8vw;
+        }
+    }
+}
+@media screen and (min-width: 425px) {
+    footer li a{
+        font-size: 3.25vw;
+    }
+}
+@media screen and (min-width: 769px) {
+    footer {
+        display: flex;
+        align-content: flex-start;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        li a{
+            font-size: 2vw;
+        }
+        .logo {
+            width: 20vw;
+        }
+        ul {
+            display: flex;
+            align-content: flex-start;
+            flex-direction: row;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        #footer__redes {
+            padding: 0;
+            flex-grow: 1;
+            ul a {
+                display: block; 
+            }
+            img {
+                width: 3vw;
+            } 
+        }
+    }
+}
+@media screen and (min-width: 1024px) {
+    footer{
+        display: flex;
+        padding: 0;
+        flex-wrap: nowrap;
+        align-items: center;
+        li a{
+            font-size: 1vw;
+        }
+        .logo {
+            align-items: center;
+            img {
+                top: 0;
+                width: 10vw;
+            }
+         }
+         ul {
+            flex-wrap: nowrap;
+        }
+        #footer__redes {
+            height: 100%;
+            display: flex;
+            padding: 0;
+            ul{
+                padding: 0;
+                flex-wrap: nowrap;
+                a{
+                    padding: 0 1vw 0 1vw;
+                } 
+            }
+            img {
+                width: 2.5vw;
+            } 
+        }
+    }
+}

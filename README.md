@@ -3,6 +3,13 @@ Este sitio de se trata de una ecommerce de artículos de ferretería.
 Detalle de versiones:
 
 "Actual"
+1 . Meta description y keywords.
+2 . Definí paleta de colores y creé variables.
+3 . Agregué hover en header.
+
+
+Versión bc37525 "SASS 1"
+1 . Apliqué SASS
 
 Versión 07bafe8 "Corrección footer"
 1 . Arreglé los problemas del footer.

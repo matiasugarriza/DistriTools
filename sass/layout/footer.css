@@ -1,0 +1,121 @@
+footer {
+  background-color: rgb(116, 116, 116);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+footer .logo {
+  width: 30vw;
+}
+footer img {
+  width: 100%;
+}
+footer #footer__menu {
+  display: flex;
+  flex-direction: column;
+}
+footer nav ul {
+  margin: 0;
+  padding: 0;
+}
+footer li {
+  margin: 2vh 0 2vh 0;
+}
+footer li a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-size: 3.5vw;
+  padding: 1vw;
+  display: inline;
+}
+footer #footer__redes {
+  padding: 0 15vw 0 15vw;
+}
+footer #footer__redes ul {
+  margin: 0;
+  padding: 1vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+footer #footer__redes img {
+  width: 8vw;
+}
+
+@media screen and (min-width: 425px) {
+  footer li a {
+    font-size: 3.25vw;
+  }
+}
+@media screen and (min-width: 769px) {
+  footer {
+    display: flex;
+    align-content: flex-start;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  footer li a {
+    font-size: 2vw;
+  }
+  footer .logo {
+    width: 20vw;
+  }
+  footer ul {
+    display: flex;
+    align-content: flex-start;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  footer #footer__redes {
+    padding: 0;
+    flex-grow: 1;
+  }
+  footer #footer__redes ul a {
+    display: block;
+  }
+  footer #footer__redes img {
+    width: 3vw;
+  }
+}
+@media screen and (min-width: 1024px) {
+  footer {
+    display: flex;
+    padding: 0;
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+  footer li a {
+    font-size: 1vw;
+  }
+  footer .logo {
+    align-items: center;
+  }
+  footer .logo img {
+    top: 0;
+    width: 10vw;
+  }
+  footer ul {
+    flex-wrap: nowrap;
+  }
+  footer #footer__redes {
+    height: 100%;
+    display: flex;
+    padding: 0;
+  }
+  footer #footer__redes ul {
+    padding: 0;
+    flex-wrap: nowrap;
+  }
+  footer #footer__redes ul a {
+    padding: 0 1vw 0 1vw;
+  }
+  footer #footer__redes img {
+    width: 2.5vw;
+  }
+}/*# sourceMappingURL=footer.css.map */

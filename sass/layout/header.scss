@@ -1,0 +1,163 @@
+@import '../variables';
+
+
+header {
+    background-color: $principal;
+    width: 100%;
+    z-index: 32;
+    font-size: 14px;
+    position: sticky;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+    .logo {
+        height: 10vw;
+        margin: 2vw;
+    }
+
+    .nav__checkbox {
+        display: none;
+    }
+
+    #nav__checkbox:checked ~ #header__menu {
+        background-color: $fondo-oscuro;
+        display: block;
+        height: 52vw;
+        padding-top: 3vh;
+        padding-bottom: 1vh;
+        margin-bottom: 10vw;
+    }
+    
+    #nav__checkbox:checked ~ #header__menu {
+        background-color: $fondo-oscuro;
+        display: block;
+        height: 52vw;
+        padding-top: 3vh;
+        padding-bottom: 1vh;
+        margin-bottom: 10vw;
+    }
+
+    .menu {
+        margin: 2vw 5vw 0  0;
+        color: $color-claro;
+    }
+
+    .close {
+        display: none;
+        margin: 2vw 5vw 0  0;
+        color: $color-claro;
+    }
+
+    #header__menu {
+        width: 100%;
+        margin: 1vw 0 1vw 0;
+        justify-content: center;
+        height: 0;
+        padding-top: 0;
+        overflow: hidden;
+        transition: all .5s ease;
+
+        & ul {
+            width: 100%;
+            text-align: center;
+            padding: 0%;
+
+            & li {
+                margin: 0%;
+                padding: 1vw;
+
+                a{
+                    color: $color-claro;
+                    font-size: 4vw;
+                    text-decoration: none;
+                    background-image: linear-gradient(currentColor, currentColor);
+                    background-position: 0% 100%;
+                    background-repeat: no-repeat;
+                    background-size: 0% 2px;
+                    transition: background-size .3s;
+                    &:hover {
+                        color: $color-hover;
+                        background-size: 100% 2px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width: 425px) {
+    #nav__checkbox:checked ~ #header__menu {
+        height: 45vw;
+    }
+    #header__menu ul li a{
+        font-size: 4vw;
+        text-decoration: none;
+    }
+}
+@media screen and (min-width: 769px) {
+    header {
+        height: 9vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+
+        img.logo {
+            height: 6.5vw;
+            margin: 1.25vw;
+            padding: 0;
+        }
+
+        a{
+            display: inline;
+        }
+
+        .menu {
+            display: none;
+        }
+
+        #header__menu {
+            width: auto;
+            height: auto;
+            display: inline;
+            padding-right: 2vw;
+
+            ul{
+                display: inline;
+
+                li{
+                    display: inline;
+
+                    a{
+                        font-size: 2vw;
+                    }
+                }
+            }
+
+
+        }
+    }
+
+
+}
+@media screen and (min-width: 1024px) {
+    header {
+        height: 11vh;
+        align-items: center;
+
+        a {
+            height: 10vh;
+
+            img.logo {
+                height: 100%;
+                margin: 0;
+                padding: 0;
+                top: 0;
+            }
+        }
+    }
+}
