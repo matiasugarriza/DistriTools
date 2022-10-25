@@ -3,3 +3,18 @@ $color-hover:black;
 $secundario:#747474;
 $principal: #ff7b00;
 $fondo-oscuro: black;
+
+$breakpoints: (
+    sm : 540px,
+    md : 768px,
+    lg : 1024px
+);
+
+$img-sm: 2.5rem;
+
+$fs1: 4vw;
+$fs2: 3.5vw;
+$fs3: 3vw;
+$fs4: 2vw;
+$fs5: 1.5vw;
+$fs6: 0.5vw;

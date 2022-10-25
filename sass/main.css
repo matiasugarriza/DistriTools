@@ -22,38 +22,68 @@ header {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+  transition: all 0.5s ease;
+}
+@media screen and (min-width: 768px) {
+  header {
+    height: 100%;
+  }
 }
 header .logo {
-  height: 10vw;
+  height: 2.5rem;
   margin: 2vw;
+  transition: all 0.5s ease;
 }
-header .nav__checkbox {
+@media screen and (min-width: 540px) {
+  header .logo {
+    height: 3rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  header .logo {
+    height: 3.5rem;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+header #nav__checkbox {
   display: none;
 }
 header #nav__checkbox:checked ~ #header__menu {
-  background-color: black;
+  background-color: #747474;
   display: block;
   height: 52vw;
   padding-top: 3vh;
   padding-bottom: 1vh;
   margin-bottom: 10vw;
 }
-header #nav__checkbox:checked ~ #header__menu {
-  background-color: black;
-  display: block;
-  height: 52vw;
-  padding-top: 3vh;
-  padding-bottom: 1vh;
-  margin-bottom: 10vw;
+@media screen and (min-width: 540px) {
+  header #nav__checkbox:checked ~ #header__menu {
+    height: 45vw;
+  }
+  header #nav__checkbox:checked ~ #header__menu #header__menu ul li a {
+    font-size: 4vw;
+  }
 }
 header .menu {
-  margin: 2vw 5vw 0 0;
+  margin-right: 5vw;
   color: #E3E0DE;
+}
+@media screen and (min-width: 768px) {
+  header .menu {
+    display: none;
+  }
+}
+header #nav__checkbox:checked ~ label .menu {
+  display: none;
 }
 header .close {
   display: none;
-  margin: 2vw 5vw 0 0;
+  margin-right: 5vw;
   color: #E3E0DE;
+}
+header #nav__checkbox:checked ~ label .close {
+  display: inline;
 }
 header #header__menu {
   width: 100%;
@@ -64,14 +94,32 @@ header #header__menu {
   overflow: hidden;
   transition: all 0.5s ease;
 }
+@media screen and (min-width: 768px) {
+  header #header__menu {
+    width: auto;
+    height: auto;
+    display: inline;
+    padding-right: 2vw;
+  }
+}
 header #header__menu ul {
   width: 100%;
   text-align: center;
   padding: 0%;
 }
+@media screen and (min-width: 768px) {
+  header #header__menu ul {
+    display: inline;
+  }
+}
 header #header__menu ul li {
   margin: 0%;
   padding: 1vw;
+}
+@media screen and (min-width: 768px) {
+  header #header__menu ul li {
+    display: inline;
+  }
 }
 header #header__menu ul li a {
   color: #E3E0DE;
@@ -87,67 +135,18 @@ header #header__menu ul li a:hover {
   color: black;
   background-size: 100% 2px;
 }
-
-@media screen and (min-width: 425px) {
-  #nav__checkbox:checked ~ #header__menu {
-    height: 45vw;
-  }
-  #header__menu ul li a {
-    font-size: 4vw;
-    text-decoration: none;
-  }
-}
-@media screen and (min-width: 769px) {
-  header {
-    height: 9vw;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-  }
-  header img.logo {
-    height: 6.5vw;
-    margin: 1.25vw;
-    padding: 0;
-  }
-  header a {
-    display: inline;
-  }
-  header .menu {
-    display: none;
-  }
-  header #header__menu {
-    width: auto;
-    height: auto;
-    display: inline;
-    padding-right: 2vw;
-  }
-  header #header__menu ul {
-    display: inline;
-  }
-  header #header__menu ul li {
-    display: inline;
-  }
+@media screen and (min-width: 540px) {
   header #header__menu ul li a {
+    display: inline;
     font-size: 2vw;
   }
 }
 @media screen and (min-width: 1024px) {
-  header {
-    height: 11vh;
-    align-items: center;
-  }
-  header a {
+  header #header__menu ul li a {
     height: 10vh;
   }
-  header a img.logo {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    top: 0;
-  }
 }
+
 footer {
   background-color: #747474;
   text-align: center;
@@ -293,6 +292,10 @@ h1 {
   margin: 0;
 }
 
+#h1-main {
+  font-size: 1.5vw;
+}
+
 h2, h3 {
   text-align: center;
 }
@@ -347,7 +350,7 @@ section .home__herramientas p:hover, section .home__plomeria p:hover, section .h
 }
 @media screen and (min-width: 1024px) {
   section {
-    height: 63vh;
+    height: 60vh;
     padding: 2vw;
     margin: 0;
     display: flex;
@@ -361,7 +364,38 @@ section .home__herramientas p:hover, section .home__plomeria p:hover, section .h
 /* Catálogo */
 #catalogo__article {
   background-color: black;
+}
+#catalogo__article h1 {
+  font-size: 4vw;
+}
+@media screen and (min-width: 540px) {
+  #catalogo__article h1 {
+    font-size: 3.5vw;
+  }
+}
+@media screen and (min-width: 768px) {
+  #catalogo__article h1 {
+    font-size: 3vw;
+  }
+}
+@media screen and (min-width: 1024px) {
+  #catalogo__article h1 {
+    font-size: 2vw;
+  }
+}
+#catalogo__article h3 {
+  font-size: 3.5vw;
   padding-top: 1vh;
+}
+@media screen and (min-width: 540px) {
+  #catalogo__article h3 {
+    font-size: 3vw;
+  }
+}
+@media screen and (min-width: 768px) {
+  #catalogo__article h3 {
+    font-size: 2vw;
+  }
 }
 
 h5 {
@@ -400,20 +434,28 @@ p {
 }
 .mediosDePago h3 {
   padding-bottom: 5vh;
+  color: #E3E0DE;
+}
+@media screen and (min-width: 540px) {
+  .mediosDePago h3 {
+    font-size: 3vw;
+  }
+}
+@media screen and (min-width: 768px) {
+  .mediosDePago h3 {
+    font-size: 2vw;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .mediosDePago h3 {
+    font-size: 1.5vw;
+  }
 }
 .mediosDePago img {
   width: 70%;
 }
 
 @media screen and (min-width: 425px) {
-  #catalogo__article h1 {
-    font-size: 6vw;
-    padding-bottom: 2vw;
-  }
-  #catalogo__article h3 {
-    font-size: 5vw;
-    padding-top: 5vh;
-  }
   h5 {
     font-size: 3.5vw;
   }
@@ -422,14 +464,6 @@ p {
   }
 }
 @media screen and (min-width: 769px) {
-  #catalogo__article h1 {
-    font-size: 5vw;
-    padding-bottom: 2vw;
-  }
-  #catalogo__article h3 {
-    font-size: 4vw;
-    padding-top: 5vh;
-  }
   h5 {
     font-size: 3vw;
   }
@@ -438,12 +472,6 @@ p {
   }
 }
 @media screen and (min-width: 1024px) {
-  #catalogo__article h1 {
-    font-size: 3.5vw;
-  }
-  #catalogo__article h3 {
-    font-size: 3vw;
-  }
   .card {
     margin: 0 0 2vw 0;
     padding: 0;
@@ -453,34 +481,58 @@ p {
   }
 }
 /* Tutoriales */
+#tutoriales h1 {
+  font-size: 4vw;
+}
+@media screen and (min-width: 540px) {
+  #tutoriales h1 {
+    font-size: 3.5vw;
+  }
+}
+@media screen and (min-width: 768px) {
+  #tutoriales h1 {
+    font-size: 3vw;
+  }
+}
+@media screen and (min-width: 1024px) {
+  #tutoriales h1 {
+    font-size: 2vw;
+  }
+}
+#tutoriales .tutoriales-container {
+  background-color: #747474;
+  margin-bottom: 2vw;
+}
 #tutoriales h5 {
   color: #ff7b00;
+  font-size: 4.5vw;
 }
 #tutoriales .col {
   color: #747474;
   border: solid 1px #E3E0DE;
-  margin: 1vw;
-  padding: 1vw;
+  width: 80vw;
+  margin: 2vw;
+  padding: 2vw;
+  align-items: center;
 }
 #tutoriales .col p {
   color: #E3E0DE;
-  font-size: 1.2vw;
+  font-size: 3.5vw;
 }
-
-@media screen and (min-width: 425px) {
-  #tutoriales h5 {
-    font-size: 4.5vw;
-  }
+#tutoriales .col iframe {
+  transform: scale(80%);
+  text-align: center;
+}
+@media screen and (min-width: 540px) {
   #tutoriales .col {
     margin: 2vw;
     padding: 2vw;
   }
   #tutoriales .col p {
-    color: #E3E0DE;
     font-size: 3.5vw;
   }
 }
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 768px) {
   #tutoriales h5 {
     font-size: 4vw;
   }
@@ -489,7 +541,6 @@ p {
     padding: 2vw;
   }
   #tutoriales .col p {
-    color: #E3E0DE;
     font-size: 2.5vw;
   }
 }
@@ -502,13 +553,28 @@ p {
     padding: 1vw;
   }
   #tutoriales .col p {
-    color: #E3E0DE;
     font-size: 1.2vw;
   }
 }
+
 /* Nosotros */
 .nosotros__h1 h1 {
-  font-size: 5vw;
+  font-size: 4vw;
+}
+@media screen and (min-width: 540px) {
+  .nosotros__h1 h1 {
+    font-size: 3.5vw;
+  }
+}
+@media screen and (min-width: 768px) {
+  .nosotros__h1 h1 {
+    font-size: 3vw;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .nosotros__h1 h1 {
+    font-size: 2vw;
+  }
 }
 
 #nosotros__section {
@@ -558,11 +624,7 @@ p {
 #nosotros__section .textoNosotros img div p {
   margin-bottom: 3vw;
 }
-
 @media screen and (min-width: 1024px) {
-  .nosotros__h1 h1 {
-    font-size: 3.5vw;
-  }
   #nosotros__section {
     padding: 0;
     display: flex;
@@ -611,22 +673,106 @@ p {
     margin-bottom: 3vw;
   }
 }
+
 /* Contacto */
-.formulario {
+.h1-contacto {
+  font-size: 4vw;
+}
+@media screen and (min-width: 540px) {
+  .h1-contacto {
+    font-size: 3.5vw;
+  }
+}
+@media screen and (min-width: 768px) {
+  .h1-contacto {
+    font-size: 3vw;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .h1-contacto {
+    font-size: 2vw;
+  }
+}
+
+.form-container {
+  background-image: url("../img/tools.jpg");
+  background-size: cover;
+  background-position: bottom;
+}
+.form-container .formulario {
   margin: auto;
   height: auto;
   width: 80vw;
-  padding: 3vw;
-  margin-bottom: 5vw;
+  padding-top: 2vw;
+  padding-bottom: 5vw;
+  border-radius: 10px;
   justify-content: center;
+  text-align: center;
 }
-
+.form-container .formulario .btn-primary {
+  width: 70vw;
+  margin-bottom: 3vh;
+  background-color: #ff7b00;
+  border: solid #ff7b00;
+}
+.form-container .formulario .btn-primary:hover {
+  background-color: #ff7b00;
+  border: solid black;
+  color: black;
+}
+.form-container .formulario .col-md-10 {
+  border-radius: 8px;
+  margin: 2px;
+  padding: 1vw;
+  border: solid 1px black;
+  font-size: 3.5vw;
+  width: 80vw;
+  height: 3vh;
+}
+.form-container .formulario #mensaje {
+  height: 15vh;
+}
+@media screen and (min-width: 768px) {
+  .form-container .formulario .col-md-10 {
+    border-radius: 8px;
+    margin: 2px;
+    border: solid 1px black;
+    font-size: 2vw;
+  }
+  .form-container .formulario #mensaje {
+    height: 20vh;
+  }
+  .form-container .formulario .btn-primary {
+    width: 80vw;
+    font-size: 3vw;
+    margin-bottom: 3vh;
+  }
+}
 @media screen and (min-width: 1024px) {
-  .formulario {
-    margin: auto;
-    height: 68vh;
-    width: 50vw;
-    padding: 3vw;
-    flex-shrink: unset;
+  .form-container .formulario {
+    width: 95vw;
+    padding: 1vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .form-container .formulario .col-md-10 {
+    width: 45vw;
+    border-radius: 8px;
+    margin: 2px;
+    padding: 1vh;
+    border: solid 1px black;
+    height: 2vw;
+    font-size: 1.5vw;
+  }
+  .form-container .formulario #mensaje {
+    width: auto;
+    height: 10vw;
+    grid-column: 1/3;
+  }
+  .form-container .formulario .btn-primary {
+    transform: scale(60%);
+    width: 10vw;
+    margin: 0;
+    grid-column: 1/3;
   }
 }/*# sourceMappingURL=main.css.map */

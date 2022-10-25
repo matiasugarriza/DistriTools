@@ -3,6 +3,12 @@ Este sitio de se trata de una ecommerce de artículos de ferretería.
 Detalle de versiones:
 
 "Actual"
+1 . Agregué Link Redes.
+2 . Creé un mapa de breakpoints para usar dentro de un mixin
+3 . Mejoré el estilo del nav
+4 . Emparejé los tamaños de los h1
+
+Versión caea PreEntrega 3
 1 . Meta description y keywords.
 2 . Definí paleta de colores y creé variables.
 3 . Agregué hover en header.

@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
-</head>
+    </head>
 <body>
     <header>
         <a href="../index.html"><img src="../img/logo-distritools.png" alt="Logo DistriTools" class="logo"> </a>
@@ -35,26 +35,27 @@
             </ul>
         </nav>
     </header>
-    <form class="row g-3 formulario">
-        <div>
-            <input class="col-md-5" type="text" placeholder="Razón Social/Nombre y Apellido">
-            <select class="col-md-5" name="Categoría IVA">
-                <option value="categoria">Categoría IVA</option>
-                <option value="responsable inscripto">Responsable Inscripto</option>
-                <option value="monotributista">Monotributista</option>
-                <option value="consumidor final">Consumidor Final</option>
-            </select>
-            <input class="col-md-5" type="text" placeholder="Cuit (Empresa) / DNI (Persona)">
-            <input class="col-md-5" type="text" placeholder="Domicilio">
-            <input class="col-md-5" type="number" placeholder="Código Postal">
-            <input class="col-md-5" type="tel" placeholder="Teléfono/Celular">
-            <input class="col-md-5" type="email" placeholder="Email">
-            <textarea class="col-md-8" name="Dejanos tu mensaje." id="" cols="35" rows="8"></textarea>
-            <div class="col-12">
-                <button type="submit" class="btn btn-primary">Enviar</button>
-              </div>
-        </div>
-    </form>
+    <h1 class="h1-contacto">
+        Contacto
+    </h1>
+    <div class="form-container">
+        <form class="row g-3 formulario">
+                <input class="col-md-10" type="text" placeholder="Razón Social/Nombre y Apellido">
+                <select class="col-md-10" name="Categoría IVA">
+                    <option value="categoria">Categoría IVA</option>
+                    <option value="responsable inscripto">Responsable Inscripto</option>
+                    <option value="monotributista">Monotributista</option>
+                    <option value="consumidor final">Consumidor Final</option>
+                </select>
+                <input class="col-md-10" type="text" placeholder="Cuit (Empresa) / DNI (Persona)">
+                <input class="col-md-10" type="text" placeholder="Domicilio">
+                <input class="col-md-10" type="number" placeholder="Código Postal">
+                <input class="col-md-10" type="tel" placeholder="Teléfono/Celular">
+                <input class="col-md-10" type="email" placeholder="Email">
+                <textarea class="col-md-10" name="mensaje" placeholder="Dejanos tu mensaje." id="mensaje" cols="35" rows="8"></textarea>
+                <button type="submit" class="btn btn-primary" id="liveAlertBtn">Enviar</button>
+        </form>
+    </div>
     <footer>
         <div class="logo">
          <img src="../img/logo-distritools.png" alt="Logo DistriTools">
@@ -71,14 +72,15 @@
             </nav>
         </div>
         <div id="footer__redes">
-             <ul>
-                 <li><a href="#"><img src="../img/fa-icon.png" alt="Logo Facebook"></a></li>
-                 <li><a href="#"><img src="../img/ig-icon.png" alt="Logo Instagram"></a></li>
-                 <li><a href="#"><img src="../img/in-icon.png" alt="Logo LinkedIn"></a></li>
-                 <li><a href="#"><img src="../img/yt-icon.png" alt="Logo YouTube"></a></li>
-                 <li><a href="tel:+0541123290382">Tel: (054)-1123290382</a></li>
-                 <li><a href="mailto:info@distritools.com.ar">Mail: info@distritools.com.ar</a></li>
-             </ul>
+            <ul>
+               <li><a href="https://www.facebook.com/"><img src="../img/fa-icon.png" alt="Logo Facebook"></a></li>
+               <li><a href="https://www.instagram.com/"><img src="../img/ig-icon.png" alt="Logo Instagram"></a></li>
+               <li><a href="https://www.linkedin.com/"><img src="../img/in-icon.png" alt="Logo LinkedIn"></a></li>
+               <li><a href="https://youtube.com/"><img src="../img/yt-icon.png" alt="Logo YouTube"></a></li>                
+               <li><a href="tel:+0541123290382">Tel: (054)-1123290382</a></li>
+               <li><a href="mailto:info@distritools.com.ar">Mail: info@distritools.com.ar</a></li>             
+            </ul>
+       </div>
         </div>
      </footer>
      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>

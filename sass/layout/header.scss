@@ -1,5 +1,5 @@
 @import '../variables';
-
+@import '../mixins';
 
 header {
     background-color: $principal;
@@ -13,43 +13,66 @@ header {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    transition: all .5s ease;
 
-    .logo {
-        height: 10vw;
-        margin: 2vw;
+    @include media-up(md){
+        height: 100%;
     }
-
-    .nav__checkbox {
+    .logo {
+        height: $img-sm;
+        margin: 2vw;
+        transition: all .5s ease;
+        @include media-up(sm){
+            height: $img-sm+0.5;
+        }
+        @include media-up(md){
+            height: $img-sm+1;
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+    }
+    
+    #nav__checkbox {
         display: none;
     }
 
     #nav__checkbox:checked ~ #header__menu {
-        background-color: $fondo-oscuro;
+        background-color: $secundario;
         display: block;
         height: 52vw;
         padding-top: 3vh;
         padding-bottom: 1vh;
         margin-bottom: 10vw;
+
+        @include media-up(sm){
+            height: 45vw;
+            #header__menu ul li a{
+                font-size: 4vw;
+            }
+        }
+
     }
     
-    #nav__checkbox:checked ~ #header__menu {
-        background-color: $fondo-oscuro;
-        display: block;
-        height: 52vw;
-        padding-top: 3vh;
-        padding-bottom: 1vh;
-        margin-bottom: 10vw;
-    }
-
     .menu {
-        margin: 2vw 5vw 0  0;
+        margin-right: 5vw;
         color: $color-claro;
+        @include media-up(md){
+            display: none;
+        }
+    }
+    
+    #nav__checkbox:checked ~ label .menu {
+        display: none;
     }
 
     .close {
         display: none;
-        margin: 2vw 5vw 0  0;
+        margin-right: 5vw;
         color: $color-claro;
+    }
+    
+    #nav__checkbox:checked ~ label .close {
+        display: inline;
     }
 
     #header__menu {
@@ -60,15 +83,26 @@ header {
         padding-top: 0;
         overflow: hidden;
         transition: all .5s ease;
+        @include media-up(md){
+            width: auto;
+            height: auto;
+            display: inline;
+            padding-right: 2vw;
+        }
 
         & ul {
             width: 100%;
             text-align: center;
             padding: 0%;
-
+            @include media-up(md){
+                display:inline;
+            }
             & li {
                 margin: 0%;
                 padding: 1vw;
+                @include media-up(md){
+                    display:inline;
+                }
 
                 a{
                     color: $color-claro;
@@ -83,80 +117,14 @@ header {
                         color: $color-hover;
                         background-size: 100% 2px;
                     }
-                }
-            }
-        }
-    }
-}
-@media screen and (min-width: 425px) {
-    #nav__checkbox:checked ~ #header__menu {
-        height: 45vw;
-    }
-    #header__menu ul li a{
-        font-size: 4vw;
-        text-decoration: none;
-    }
-}
-@media screen and (min-width: 769px) {
-    header {
-        height: 9vw;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        flex-wrap: wrap;
-
-        img.logo {
-            height: 6.5vw;
-            margin: 1.25vw;
-            padding: 0;
-        }
-
-        a{
-            display: inline;
-        }
-
-        .menu {
-            display: none;
-        }
-
-        #header__menu {
-            width: auto;
-            height: auto;
-            display: inline;
-            padding-right: 2vw;
-
-            ul{
-                display: inline;
-
-                li{
-                    display: inline;
-
-                    a{
+                    @include media-up(sm){
+                        display: inline;
                         font-size: 2vw;
                     }
+                    @include media-up(lg){
+                        height: 10vh;
+                    }
                 }
-            }
-
-
-        }
-    }
-
-
-}
-@media screen and (min-width: 1024px) {
-    header {
-        height: 11vh;
-        align-items: center;
-
-        a {
-            height: 10vh;
-
-            img.logo {
-                height: 100%;
-                margin: 0;
-                padding: 0;
-                top: 0;
             }
         }
     }
